@@ -18,55 +18,57 @@
             display: flex;
             flex-direction: column; /* 垂直排列 */
             align-items: center; /* 居中对齐 */
-            gap: 20px; /* 时钟和天气卡片之间的间距 */
+            gap: 10px; /* 时钟和天气卡片之间的间距 */
+            width: 260px; /* 宽度 */
+            height: 430px; /* 高度 */
         }
 
         .clock-container {
             position: relative;
             perspective: 800px;
-            transform: scale(0.85);
+            transform: scale(0.7); /* 缩小时钟 */
         }
 
         .date-card {
             background: #f8f8f8;
-            padding: 12px 24px;
-            border-radius: 10px;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.08);
-            margin-bottom: 20px;
+            padding: 8px 16px; /* 缩小内边距 */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+            margin-bottom: 10px; /* 缩小外边距 */
         }
 
         .date-info {
             display: flex;
             align-items: baseline;
-            gap: 10px;
+            gap: 8px; /* 缩小间距 */
         }
 
         .year-month {
-            font-size: 1.2em;
+            font-size: 0.9em; /* 缩小字体 */
             color: #666;
         }
 
         .day-week {
-            font-size: 1.4em;
+            font-size: 1.1em; /* 缩小字体 */
             color: #333;
             font-weight: bold;
         }
 
         .time-container {
             display: flex;
-            gap: 8px;
+            gap: 6px; /* 缩小间距 */
         }
 
         .time-box {
             background: #f0f0f0;
-            padding: 12px;
-            border-radius: 8px;
+            padding: 8px; /* 缩小内边距 */
+            border-radius: 6px;
             position: relative;
             perspective: 600px;
         }
 
         .time-number {
-            font-size: 2.8em;
+            font-size: 1.8em; /* 缩小字体 */
             color: #222;
             font-weight: 300;
         }
@@ -82,52 +84,52 @@
         }
 
         .colon {
-            font-size: 2em;
+            font-size: 1.5em; /* 缩小字体 */
             align-self: center;
             color: #666;
         }
 
         .second {
             color: #e74c3c;
-            font-size: 0.9em;
+            font-size: 0.7em; /* 缩小字体 */
             position: absolute;
-            bottom: -18px;
-            right: 6px;
+            bottom: -14px; /* 调整位置 */
+            right: 4px; /* 调整位置 */
         }
 
         .weather-card {
-            width: 110px;
-            height: 270px;
+            width: 240px; /* 调整宽度 */
+            height: 180px; /* 调整高度 */
             background: white;
-            border-radius: 10px;
+            border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            padding: 10px;
+            padding: 8px; /* 缩小内边距 */
             font-family: Arial, sans-serif;
             overflow: hidden;
         }
 
         .day-item {
-            height: 90px;
+            height: 50px; /* 缩小高度 */
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            margin: 3px 0;
+            margin: 2px 0; /* 缩小外边距 */
         }
 
         .date {
-            font-size: 12px;
+            font-size: 10px; /* 缩小字体 */
             color: #333;
         }
 
         .weather-icon {
-            width: 30px;
-            height: 30px;
-            font-size: 24px;
+            width: 20px; /* 缩小图标 */
+            height: 20px; /* 缩小图标 */
+            font-size: 18px; /* 缩小字体 */
         }
 
         .temp {
-            font-size: 14px;
+            font-size: 12px; /* 缩小字体 */
             color: #666;
             font-weight: bold;
         }
