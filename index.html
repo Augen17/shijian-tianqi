@@ -11,16 +11,17 @@
             background: white;
             overflow: hidden;
             font-family: 'Microsoft YaHei', sans-serif;
-            padding-left: 20px; /* 添加左边距 */
+            padding-left: 0; /* 将左边距设置为0 */
         }
 
         .content-container {
             display: flex;
             flex-direction: column; /* 垂直排列 */
-            align-items: center; /* 居中对齐 */
+            align-items: flex-start; /* 向左对齐 */
             gap: 10px; /* 时钟和天气卡片之间的间距 */
             width: 260px; /* 宽度 */
             height: 430px; /* 高度 */
+            margin-left: 0; /* 将左边距设置为0 */
         }
 
         .clock-container {
@@ -107,6 +108,7 @@
             padding: 8px; /* 缩小内边距 */
             font-family: Arial, sans-serif;
             overflow: hidden;
+            align-self: flex-start; /* 天气卡片向左对齐 */
         }
 
         .day-item {
